@@ -1,4 +1,4 @@
-class GenresController < ApplicationController
+class GenresController < ApplicationController 
     #CREATE
     def new
         @genre = Genre.new
