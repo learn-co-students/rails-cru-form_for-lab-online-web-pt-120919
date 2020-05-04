@@ -1,4 +1,4 @@
-# CRU with form_for Lab
+# CRU with form_for Lab 
 
 ## Objectives
 
