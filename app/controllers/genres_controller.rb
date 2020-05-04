@@ -1,12 +1,13 @@
 class GenresController < ApplicationController
     #CREATE
     def new
+        @genre = Genre.new
     end
 
     def create 
         @genre = Genre.new(genre_params)
-        @genre = Genre.save
-        redirect_to genre_path(a@genre)        
+        @genre.save
+        redirect_to genre_path(@genre)        
     end
 
     #READ
@@ -33,5 +34,5 @@ class GenresController < ApplicationController
     def genre_params
         params.require(:genre).permit(:name)
     end
-    
-end
+
+end 

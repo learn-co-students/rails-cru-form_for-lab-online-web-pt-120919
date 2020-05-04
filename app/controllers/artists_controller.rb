@@ -1,7 +1,7 @@
 class ArtistsController < ApplicationController
     #CREATE
     def new
-        #@artist = Artist.new
+        @artist = Artist.new
     end
   
     def create
